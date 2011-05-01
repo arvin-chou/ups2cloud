@@ -144,14 +144,14 @@
 		}
 		else
 		{
-			//echo $sql;
+			echo $sql;
 			//http://www.phpclasses.org/browse/file/24896.html [+]
 			//Usage example of dqml2tree class 
 			//$sql = "select date,num from popularity_noip where date = '2011-04-13'";
 			//		$sql .= ' and num > 10';
 			$query2tree = new dqml2tree($sql);
 			$sql_tree = $query2tree->make(); 
-			//print_r($sql_tree);
+			print_r($sql_tree);
 			$rows = adapter($sql_tree);
 			//die("::");
 			//die(print_r($rows));
